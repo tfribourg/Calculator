@@ -8,5 +8,16 @@ function multiply(a, b) {
     return a * b
 }
 function divide (a, b) {
-    return a % b
+    return a / b
+}
+
+function operate (a, b, op) {
+    if (op === '+') {
+        return a + b }
+    if (op === '-'){
+        return a - b }
+    if (op === '*'){
+        return a * b }
+    if (op === '/'){
+        return a / b    }
 }
