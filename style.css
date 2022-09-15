@@ -1,1 +1,25 @@
 
+.container {
+    display: grid;
+    grid-template-columns:repeat(4, 100px);
+    grid-template-rows:repeat( 6, 100px);
+    gap:2px;
+    justify-content:center;
+    margin-top: 200px;
+}
+.display{
+    display: flex;
+    border:black 2px solid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/ -1;
+}
+#clear{
+    grid-column: span 3;
+}
+#equal{
+    grid-column: span 1;
+}
+#zero{
+    grid-column: span 2;
+}
